@@ -116,10 +116,12 @@
           </h1>
           <button
             type="button"
-            class="main-button"
+            class="main-button" data-modal-open
           >
             Заказать услугу
           </button>
+          
+          </div>
         </div>
       </section>
 
@@ -234,31 +236,49 @@
           </h2>
           <ul class="activity-list">
             <li class="activity-item item">
-              <a href=""
-                ><img
-                  src="./img/box-1.jpg"
-                  alt="верстаем сайт"
-                  width="370"
-                  height="294"
-              /></a>
+              <a href=""></a>
+                <div class="activity-div">
+                  <img
+                    src="./img/box-1.jpg"
+                    alt="верстаем сайт"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="activity-text">
+                    Десктопные приложения
+                  </p>
+                </div>
+              </a>
             </li>
             <li class="activity-item item">
-              <a href=""
-                ><img
-                  src="./img/box-2.jpg"
-                  alt="делаем мобильное приложение"
-                  width="370"
-                  height="294"
-              /></a>
+              <a href="">
+                <div class="activity-div">
+                  <img
+                    src="./img/box-2.jpg"
+                    alt="делаем мобильное приложение"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="activity-text">
+                    Мобильные приложения
+                  </p>
+                </div>
+              </a>
             </li>
             <li class="activity-item item">
-              <a href=""
-                ><img
-                  src="./img/box-3.jpg"
-                  alt="делаем дизайн"
-                  width="370"
-                  height="294"
-              /></a>
+              <a href="">
+                <div class="activity-div">
+                  <img
+                    src="./img/box-3.jpg"
+                    alt="делаем дизайн"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="activity-text">
+                    Дизайнерские решения
+                  </p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -802,5 +822,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+<button type="button" class="popup-btn" data-modal-close> 
+<svg class="popup-icon" width="30" height="'30"> <use href="./icons/symbol-defs.svg#icon-close"></use> </svg>  
+</button>
+      </div>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
